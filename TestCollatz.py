@@ -61,14 +61,29 @@ class TestCollatz (TestCase) :
     def test_eval_2 (self) :
         v = collatz_eval(100, 200)
         self.assertEqual(v, 125)
+    
+    @unittest.expectedFailure
+    def test_eval_2fail (self) :
+        v = collatz_eval(100, 200)
+        self.assertEqual(v, 1)
 
     def test_eval_3 (self) :
         v = collatz_eval(201, 210)
         self.assertEqual(v, 89)
+    
+    @unittest.expectedFailure
+    def test_eval_3fail (self) :
+        v = collatz_eval(201, 210)
+        self.assertEqual(v, 55)
 
     def test_eval_4 (self) :
         v = collatz_eval(900, 1000)
         self.assertEqual(v, 174)
+    
+    @unittest.expectedFailure
+    def test_eval_4fail (self) :
+        v = collatz_eval(900, 1000)
+        self.assertEqual(v, 500)
 
     # -----
     # print
