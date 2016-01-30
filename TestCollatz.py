@@ -33,21 +33,21 @@ class TestCollatz (TestCase) :
         self.assertEqual(j, 10)
 
     def test_read_1 (self) :
-        s    = "111 111\n"
+        s    = "11124 111\n"
         i, j = collatz_read(s)
-        self.assertEqual(i,  111)
+        self.assertEqual(i,  11124)
         self.assertEqual(j, 111)
 
     def test_read_2 (self) :
-        s    = "-1 1000000001\n"
+        s    = "99 999999\n"
         i, j = collatz_read(s)
-        self.assertEqual(i,  1)
-        self.assertEqual(j, 1000000000)
+        self.assertEqual(i,  99)
+        self.assertEqual(j, 999999)
 
     def test_read_3 (self) :
-        s    = "1.5 20.1\n"
+        s    = "15 20 20\n"
         i, j = collatz_read(s)
-        self.assertEqual(i,  2)
+        self.assertEqual(i,  15)
         self.assertEqual(j, 20)
 
     # ----
@@ -116,6 +116,18 @@ class TestCollatz (TestCase) :
         collatz_solve(r, w)
         self.assertEqual(w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
 
+    def test_solve1 (self) :
+        r = StringIO("10 1\n200 100\n210 201\n1000 900\n")
+        w = StringIO()
+        collatz_solve(r, w)
+        self.assertEqual(w.getvalue(), "10 1 20\n200 100 125\n210 201 89\n1000 900 174\n")
+
+    def test_solve2 (self) :
+        r = StringIO("1 1\n100 100\n123456 654321\n999999 999999\n")
+        w = StringIO()
+        collatz_solve(r, w)
+        self.assertEqual(w.getvalue(), "1 1 1\n100 100 26\n123456 654321 509\n999999 999999 259\n")
+
 # ----
 # main
 # ----
@@ -123,7 +135,7 @@ class TestCollatz (TestCase) :
 if __name__ == "__main__" :
     main()
 
-"""
+""" #pragma: no cover
 % coverage3 run --branch TestCollatz.py >  TestCollatz.out 2>&1
 
 

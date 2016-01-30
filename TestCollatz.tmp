@@ -1,23 +1,11 @@
-.............FE.
-======================================================================
-ERROR: test_read_3 (__main__.TestCollatz)
+..................
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "TestCollatz.py", line 49, in test_read_3
-    i, j = collatz_read(s)
-  File "/home/neo/Documents/cs373/project1/cs373-collatz/Collatz.py", line 34, in collatz_read
-    return [int(a[0]), int(a[1])]
-ValueError: invalid literal for int() with base 10: '1.5'
+Ran 18 tests in 66.288s
 
-======================================================================
-FAIL: test_read_2 (__main__.TestCollatz)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "TestCollatz.py", line 44, in test_read_2
-    self.assertEqual(i,  1)
-AssertionError: -1 != 1
-
-----------------------------------------------------------------------
-Ran 16 tests in 0.040s
-
-FAILED (failures=1, errors=1)
+OK
+Name             Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------
+Collatz.py          35      0     12      0   100%   
+TestCollatz.py      78      0      0      0   100%   
+------------------------------------------------------------
+TOTAL              113      0     12      0   100%   
