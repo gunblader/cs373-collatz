@@ -37,13 +37,13 @@ class TestCollatz (TestCase) :
         i, j = collatz_read(s)
         self.assertEqual(i,  111)
         self.assertEqual(j, 111)
-
+   
     def test_read_2 (self) :
         s    = "-1 1000000001\n"
         i, j = collatz_read(s)
         self.assertEqual(i,  1)
         self.assertEqual(j, 1000000000)
-
+   
     def test_read_3 (self) :
         s    = "1.5 20.1\n"
         i, j = collatz_read(s)
@@ -61,26 +61,18 @@ class TestCollatz (TestCase) :
     def test_eval_2 (self) :
         v = collatz_eval(100, 200)
         self.assertEqual(v, 125)
-
-    def test_eval_2fail (self) :
+    @unittest.expectedFailure
+    def test_eval_2f (self) :
         v = collatz_eval(100, 200)
-        self.assertNotEqual(v, 1)
+        self.assertEqual(v, 1)
 
     def test_eval_3 (self) :
         v = collatz_eval(201, 210)
         self.assertEqual(v, 89)
 
-    def test_eval_3fail (self) :
-        v = collatz_eval(201, 210)
-        self.assertNotEqual(v, 55)
-
     def test_eval_4 (self) :
         v = collatz_eval(900, 1000)
         self.assertEqual(v, 174)
-
-    def test_eval_4fail (self) :
-        v = collatz_eval(900, 1000)
-        self.assertNotEqual(v, 500)
 
     # -----
     # print
