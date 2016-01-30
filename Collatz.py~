@@ -6,20 +6,6 @@
 # Glenn P. Downing
 # ---------------------------
 
-
-def cycle_length (num) :
-    assert num > 0
-    cycle = 1
-    while num > 1 :
-        if (num % 2) == 0 :
-            num = (num // 2)
-        else :
-            num = (3 * num) + 1
-        cycle += 1
-    assert cycle > 0
-    return cycle
-
-
 # ------------
 # collatz_read
 # ------------
@@ -43,26 +29,8 @@ def collatz_eval (i, j) :
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-    low = i
-    high = j
-
-    # Check that i and j are with in the range 0-1000000
-    assert i > 0 and i < 1000000
-    assert j > 0 and j < 1000000
-
-    # look for low bound and the high bound
-    if(i > j):
-        low = j
-        high = i
-
-    maxC = 1
-    test = 1
-    for cur in range (low, high + 1):
-        test = cycle_length(cur)
-        if (test > maxC):
-            maxC = test
-
-    return maxC
+    # <your code>
+    return 1
 
 # -------------
 # collatz_print
@@ -74,7 +42,7 @@ def collatz_print (w, i, j, v) :
     w a writer
     i the beginning of the range, inclusive
     j the end       of the range, inclusive
-    v the maxCC cycle length
+    v the max cycle length
     """
     w.write(str(i) + " " + str(j) + " " + str(v) + "\n")
 
