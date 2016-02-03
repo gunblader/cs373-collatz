@@ -65,6 +65,8 @@ def collatz_eval (i, j) :
         high = i
 
     # Optimization from class (where you half the range..)
+        # low = (high//2)   # not working
+
 
     global cycleCache
     maxC = 1
