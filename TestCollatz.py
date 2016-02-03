@@ -2,8 +2,8 @@
 
 # -------------------------------
 # projects/collatz/TestCollatz.py
-# Copyright (C) 2015
-# Glenn P. Downing
+# Copyright (C) 2016
+# Paul Bass
 # -------------------------------
 
 # https://docs.python.org/3.4/reference/simple_stmts.html#grammar-token-assert_stmt

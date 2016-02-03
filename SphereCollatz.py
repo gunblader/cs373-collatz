@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 
 # ---------------------------
-# projects/collatz/Collatz.py
+# projects/collatz/SphereCollatz.py
 # Copyright (C) 2016
 # Paul Bass
 # ---------------------------
 
-# creating a simple cache
-global cycleCache
-cycleCache = [0] * 1000001
+
+# ----
+# main
+# ----
+
+if __name__ == "__main__" :
+    collatz_solve(sys.stdin, sys.stdout)
 
 
 def cycle_length (num) :
@@ -22,11 +26,6 @@ def cycle_length (num) :
         cycle += 1
     assert cycle > 0
     return cycle
-
-
-# gets the values for the cache and stores them in array
-for x in range(1,1000001):
-    cycleCache[x] = (cycle_length(x))
 
 
 # ------------
@@ -64,17 +63,12 @@ def collatz_eval (i, j) :
         low = j
         high = i
 
-    # Optimization from class (where you half the range..)
-
-    global cycleCache
     maxC = 1
     test = 1
     for cur in range (low, high + 1):
-        # print(cycleCache[cur])
-        test = cycleCache[cur]
+        test = cycle_length(cur)
         if (test > maxC):
             maxC = test
-            # print(maxC)
     assert maxC > 0
     return maxC
 
