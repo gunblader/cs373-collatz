@@ -1,0 +1,108 @@
+commit cf597b436c47b1f25d0b626f92b415f0cf5ab667
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Feb 3 17:51:20 2016 -0600
+
+    tried to optimiz
+
+commit 308fb68984f15f9352c33a336cbeecb9119b1381
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Feb 3 17:48:07 2016 -0600
+
+    tried to optimiz
+
+commit 66cff79cb8a6fa02f68255d1e274480becc067e3
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Feb 3 17:24:00 2016 -0600
+
+    fixed makefile to show pdb586
+
+commit 9e5b4011394e830fa5b52a78ec53c8ebda6471f2
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Feb 3 17:15:23 2016 -0600
+
+    added subfolder with EID named tests'
+
+commit af387b4b1870d1044b1d33ab7354396e777bc3f5
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Feb 3 17:02:36 2016 -0600
+
+    finished the project. fixes #7 #8 #9 #10 #11 #15 #18 #17
+
+commit 8e7fee0267c17ed4a118191f1a6318ffc3b276d3
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Sat Jan 30 16:51:11 2016 -0600
+
+    tests are fixed now. also put in comment so that coverage get 100%
+
+commit a3cd64d1cf77c5445e930b0d6b2ea252e751f1c4
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Sat Jan 30 15:15:16 2016 -0600
+
+    implemented a simple collatz_eval
+
+commit 5df7b6cd8fe53f2f4e30f0be05b4e6fbc871a4b8
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Jan 27 12:46:35 2016 -0600
+
+    wrote 3 unit tests for function- collatz_eval
+
+commit 0ee2d479016770f1cfe0190a00bca36bc15a9ee8
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Jan 27 12:34:53 2016 -0600
+
+    wrote 3 unit tests for function- collatz_print
+
+commit 9a6a91be970faa54eb0f708a40a958d67b02045c
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Jan 27 12:02:37 2016 -0600
+
+    wrote 3 unit tests for function- collatz_read
+
+commit 4542eab5a928ba900c04e5873292c7eb79cde588
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Jan 27 11:54:33 2016 -0600
+
+    fixed unit tests and comfirmed expected failures in TestCollatz.tmp. fixes #5 and fixes #6
+
+commit f4fdee701470a4b64a2ef51024047fa33faf943e
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Wed Jan 27 00:18:30 2016 -0600
+
+    ran make test. fixes #4
+
+commit 4650725e6bed4e9c53c4809c63058fcb82bd1bbe
+Merge: c578cac 6111d74
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Sun Jan 24 18:06:16 2016 -0600
+
+    Merge branch 'dev' of github.com:gunblader/cs373-collatz into dev
+
+commit c578cac33c8dee477ddc8a53624246218342bbe9
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Sun Jan 24 18:05:56 2016 -0600
+
+    copied over files from sample repo
+
+commit 6111d74be45e02f0781361d3fe2bae17bbb21a25
+Author: Paul Bass <pdbass3@hotmail.com>
+Date:   Sun Jan 24 17:45:45 2016 -0600
+
+    Update .travis.yml
+
+commit f7a54c0c0546ca8055118f59a79b487c532b788a
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Sun Jan 24 17:42:10 2016 -0600
+
+    update to .travis.yml
+
+commit b06a7991c2edad491206e092d9085f83f164e3e7
+Author: gunblader <pdbass3@hotmail.com>
+Date:   Sun Jan 24 17:34:27 2016 -0600
+
+    adding .travis.yml
+
+commit 54e138b0ad1b878f7ae7407eab82f1717b21cb7a
+Author: Paul Bass <pdbass3@hotmail.com>
+Date:   Sun Jan 24 16:50:30 2016 -0600
+
+    Initial commit
